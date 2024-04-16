@@ -2,7 +2,20 @@ package Uilt;
 
 public abstract class Algoritmos {
 	
-	
+	public int fibonacci (int numero ) {
+        if(numero<= 1) {
+        	return numero;
+        }else {
+        	int a= 0;
+        	int b= 1;
+        	for(int i = 2;i<numero ; i++) {
+        		int tempo = a + b ;
+        		a =b;
+        		b= tempo;
+        	}
+            return b;
+        }
+    }
 	
 
 	/**
