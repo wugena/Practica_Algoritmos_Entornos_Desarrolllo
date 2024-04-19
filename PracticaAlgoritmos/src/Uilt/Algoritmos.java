@@ -1,8 +1,12 @@
 package Uilt;
 
 public abstract class Algoritmos {
-	
-	public int fibonacci (int numero ) {
+	/**
+	 * 
+	 * @param numero
+	 * @return
+	 */
+	public static int fibonacci (int numero ) {
         if(numero<= 1) {
         	return numero;
         }else {
@@ -24,8 +28,9 @@ public abstract class Algoritmos {
 	 * @param Factorial para saber el factoral
 	 * @return devuelve funcio factorial si introduce el numero te devulve el funcion
 	 */
-	 public int factorial (int Factorial) {
-	        for(int i =0; i<Factorial ; i++) {
+	 public static int factorial (int numero) {
+		 int Factorial = 1;
+	        for(int i =1; i<=numero ; i++) {
 	        	Factorial *=i;
 	        }		 
 	        return Factorial;
@@ -39,12 +44,12 @@ public abstract class Algoritmos {
 	  */
 
 	 
-	 public boolean  esPrimos (int primos) {
+	 public static boolean  esPrimos (int primos) {
 		 boolean Esprimos  ; 
 	        if(primos /2 == 0) {
-	        	Esprimos=true;
-	        }else
 	        	Esprimos=false;
+	        }else
+	        	Esprimos=true;
 		 return Esprimos;
 		 
 	    }
